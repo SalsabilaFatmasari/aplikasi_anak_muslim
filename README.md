@@ -1,6 +1,6 @@
 # apk_ank
 
-A new Flutter project.
+A neew Flutter project.
 
 ## Getting Started
 
