@@ -3,49 +3,45 @@ import 'package:apk_ank/model/model_niat.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
-class NiatSholat extends StatefulWidget {
-  const NiatSholat({Key? key}) : super(key: key);
+class NiatSholatSunnah extends StatefulWidget {
+  const NiatSholatSunnah({Key? key}) : super(key: key);
 
   @override
-  _NiatSholatState createState() => _NiatSholatState();
+  _NiatSholatSunnahState createState() => _NiatSholatSunnahState();
 }
 
-class _NiatSholatState extends State<NiatSholat> {
+class _NiatSholatSunnahState extends State<NiatSholatSunnah> {
   Future<List<ModelNiat>> ReadJsonData() async {
     final jsondata =
-        await rootBundle.rootBundle.loadString('assets/data/niatshalat.json');
+        await rootBundle.rootBundle.loadString('assets/data/niatshalatsunnah.json');
     final list = json.decode(jsondata) as List<dynamic>;
     return list.map((e) => ModelNiat.fromJson(e)).toList();
   }
 
- @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff0e1446),
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Stack(
               children: [
-                
-                //tombol back
                 Align(
                   alignment: Alignment.topLeft,
                   child: IconButton(
                     onPressed: () => Navigator.of(context).pop(),
-                    icon: Icon(Icons.arrow_back, color: Colors.white),
+                    icon: Icon(Icons.arrow_back, color: Colors.black),
                   ),
                 ),
-
-                //tampilan header
                 Align(
                   alignment: Alignment.topLeft,
                   child: Container(
                     margin: EdgeInsets.only(top: 80),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Color(0xff44aca0)),
+                        color: Color(0xff0e1446)),
                     height: 200,
                     width: MediaQuery.of(context).size.width,
                     child: Container(
@@ -55,14 +51,14 @@ class _NiatSholatState extends State<NiatSholat> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Niat Shalat Wajib",
+                              "Niat Sholat Wajib",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Bacaan Niat Shalat Wajib",
+                              "Bacaan niat sholat wajib 5 waktu",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -72,8 +68,6 @@ class _NiatSholatState extends State<NiatSholat> {
                         )),
                   ),
                 ),
-
-                //header kotak kanan
                 Align(
                   alignment: Alignment.topRight,
                   child: ClipRRect(
@@ -83,10 +77,8 @@ class _NiatSholatState extends State<NiatSholat> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/ic_shalat_wajib.png", //ganti gambar
+                      "assets/images/bg_shalat.png",
                       width: 330,
-                      height: 200,
-                      fit: BoxFit.fitWidth,
                     ),
                   ),
                 ),

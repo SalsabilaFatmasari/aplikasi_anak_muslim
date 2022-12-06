@@ -1,0 +1,107 @@
+[
+    {
+      "id": 1,
+      "name": "Membaca Ta'awudz",
+      "arabic": "أَعُوْذُبِاللهِمِنَالشَّيْطَانِالرَّجِيْمِ",
+      "latin": "A‘ūdzu billāhi minas syaithānir rajīm",
+      "terjemahan": "Aku berlindung kepada Allah dari gangguan setan yang terkutuk"
+    },
+    {
+      "id": 2,
+      "name": "Membaca Basmalah",
+      "arabic": "بِسْمِاللهِالرَّحْمنِالرَّحِيمْ,",
+      "latin": "Bismillāhir rahmānir rahīm",
+      "terjemahan": " Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang"
+    },
+    {
+      "id": 3,
+      "name": "Membaca Dua Kalimat Syahadat",
+      "arabic": "أَشْهَدُأَنْلآّاِلَهَإِلاَّاللهُوَأَشْهَدُأَنَّمُحَمَّدًارَسُوْلُاللهِ",
+      "latin": "Asyhadu an lā ilāha illallāhu, wa asyhadu anna Muhammadan rasūlullāhi",
+      "terjemahan": "Aku bersaksi, tiada tuhan selain Allah. Aku juga bersaksi bahwa Muhammad adalah utusan Allah"
+    },
+    {
+      "id": 4,
+      "name": "Membaca Niat Wudhu",
+      "arabic": "نَوَيْتُ الْوُضُوْءَ لِرَفْعِ الْحَدَثِ اْلاَصْغَرِ فَرْضًا ِللهِ تَعَالَى",
+      "latin": "Nawaitul wudhuu-a liraf'll hadatsil ashghari fardhal lilaahi ta'aalaa",
+      "terjemahan": "Ya Allah peliharalah kedua tanganku dari perbuatan maksiat pada-Mu"
+    },
+    {
+      "id": 5,
+      "name": "Doa Ketika Membasuh Tangan",
+      "arabic": "اللّٰهُمَّاحْفَظْيَدَيَّمِنْمَعَاصِكَكُلِّهَ",
+      "latin": "Allahumma ihfadh yadi min ma'ashika kullaha",
+      "terjemahan": "Aku berniat shalat fardhu Isya empat raka'at menghadap kiblat karena Allah Ta'ala"
+    },
+    {
+        "id": 6,
+        "name": "Doa Ketika Berkumur",
+        "arabic": "اللَّهُمَّ أَعِنِّيْ عَلَى ذِكْرِكَ وَشُكْرِكَ اللَّهُمَّ اسْقِنِي مِنْ حَوْضِ نَبِيِّكَ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ كَأْسًا لَا أَظْمَأُ بَعْدَهُ أَبَدًا",
+        "latin": "Allahumma a'inni 'ala dzikrika wa syukrika, Allahumma asqini min haudli nabiyyika shallallahu 'alaihi wa sallam ka'san la adzma'a ba'dahu Abadan",
+        "terjemahan": "Ya Allah, tolonglah aku (untuk selalu) mengingat dan bersyukur pada-Mu. Ya Allah, beri aku minuman dari telaga Kautsar Nabi Muhammad, yang begitu menyegarkan hingga aku tidak merasa haus selamanya."
+      },
+      {
+        "id": 7,
+        "name": "Doa Ketika Membasuh Lubang Hidung",
+        "arabic": "اللَّهُمَّ أَعِنِّيْ عَلَى ذِكْرِكَ وَشُكْرِكَ اللَّهُمَّ اسْقِنِي مِنْ حَوْضِ نَبِيِّكَ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ كَأْسًا لَا أَظْمَأُ بَعْدَهُ أَبَدً",
+        "latin": "Allahumma a'inni 'ala dzikrika wa syukrika, Allahumma asqini min haudli nabiyyika shallallahu 'alaihi wa sallam ka'san la adzma'a ba'dahu Abadan",
+        "terjemahan": "Ya Allah, tolonglah aku (untuk selalu) mengingat dan bersyukur pada-Mu. Ya Allah, beri aku minuman dari telaga Kautsar Nabi Muhammad, yang begitu menyegarkan hingga aku tidak merasa haus selamanya."
+      },
+      {
+        "id": 8,
+        "name": "Doa Ketika Membasuh Wajah",
+        "arabic":"اللَّهُمَّ بَيِّضْ وَجْهِيْ يَوْمَ تَبْيَضُّ وُجُوهٌ وَتَسْوَدُّ وُجُوهٌ",
+        "latin": "Allahumma bayyidl wajhi yauma tabyadldlu wujuhun wa taswaddu wujuh",
+        "terjemahan": "Ya Allah, putihkanlah wajahku di hari ketika wajah-wajah memutih dan menghitam"
+      },
+      {
+        "id": 9,
+        "name": "Doa Ketika Membasuh Tangan Kanan",
+        "arabic":"راللَّهُمَّ أَعْطِنِيْ كِتَابِيْ بِيَمِينِيْ وَحَاسِبْنِيْ حِسَابًا يَسِيرًا",
+        "latin": "Allahumma a'thini kitabi biyamini, wa hasibni hisaban yasiran",
+        "terjemahan": "Ya Allah, berikanlah kitab amalku (kelak di akhirat) pada tangan kananku, dan hisablah aku dengan hisab yang ringan"
+      },
+      {
+        "id": 10,
+        "name": "Doa Ketika Membasuh Tangan Kiri",
+        "arabic":"اللَّهُمَّ لَا تُعْطِنِيْ كِتَابِيْ بِشِمَالِيْ وَلَا مِنْ وَرَاءِ ظَهْرِيْ",
+        "latin": "Allahumma laa tu'thini bi syimaali, wa laa min waraa'i dzahri",
+        "terjemahan": "Ya Allah, jangan Kau berikan kitab amalku (kelak di akhirat) pada tangan kiriku, dan jangan pula diberikan dari balik punggungku"
+      },
+      {
+        "id": 11,
+        "name": "Doa Ketika Mengusap Kepala",
+        "arabic":"اللَّهُمَّ حَرِّمْ شَعْرِيْ وَبَشَرِيْ عَلَى النَّارِ وَأَظِلَّنِيْ تَحْتَ عَرْشِكَ يَوْمَ لَا ظِلَّ إلَّا ظِلُّك",
+        "latin": "Allahumma harrim sya'ri wa basyari 'ala an-nari wa adzilni tahta 'arsyika yauma la dzilla illa dzilluka",
+        "terjemahan": "Ya Allah, halangi rambut dan kulitku dari sentuhan api neraka, dan naungi aku dengan naungan singgasana-Mu, pada hari ketika tak ada naungan selain naungan dari-Mu"
+      },
+      {
+        "id": 12,
+        "name": "Doa Ketika Membasuh Kedua Telinga",
+        "arabic":"اللَّهُمَّ اجْعَلْنِي مِنْ الَّذِينَ يَسْتَمِعُونَ الْقَوْلَ فَيَتَّبِعُونَ أَحْسَنَهُ",
+        "latin": "Allahumma ij'alni minalladzina yastami'unal qaula fayattabi'una ahsanahu",
+        "terjemahan": "Ya Allah, jadikanlah aku orang-orang yang mampu mendengar ucapan dan mampu mengikuti apa yang baik dari ucapan tersebut"
+      },
+      {
+        "id": 13,
+        "name": "Doa Ketika Membasuh Kaki Kanan",
+        "arabic":"اَللَّهُمَّ اجْعَلْهُ سَعْيًا مَشْكُوْرًا وَذَنْبًا مَغْفُوْرًا وَعَمَلًا مُتَقَبَّلًا. اللَّهُمَّ ثَبِّتْ قَدَمِيْ عَلَى الصِّرَاطِ يَوْمَ تَزِلُّ فِيْهِ الْأَقْدَامُ",
+        "latin": "Allahumma ij'alhu sa'yan masykuran wa dzamban maghfuran wa 'amalan mutaqabbalan. Allahumma tsabbit qadami 'ala shirathi yauma tazila fihi al-aqdam",
+        "terjemahan": "Ya Allah, jadikanlah (segenap langkahku) sebagai usaha yang disyukuri, sebagai penyebab terampuninya dosa dan sebagai amal yang diterima. Ya Allah, mantapkanlah telapak kakiku saat melintasi jembatan shirathal mustaqim, kelak di hari ketika banyak telapak kaki yang tergelincir"
+      },
+      {
+        "id": 14,
+        "name": "Doa Ketika Membasuh Kaki Kiri",
+        "arabic":"اَللَّهُمَّ إِنِّي أَعُوْذُ بِكَ أَنْ تَنْزِلَ قَدَمِيْ عَنِ الصِّرَاطِ يَوْمَ تَنْزِلُ فِيْهِ أَقْدَامُ الْمُنَافِقِيْنَ",
+        "latin": "Allahumma inni a'udzu bika an tanzila qadami 'anish-shirathi yauma tanzilu fihi aqdamul munafiqin",
+        "terjemahan": "Ya Allah, aku berlindung pada-Mu, dari tergelincir saat melintasi jembatan shirathal mustaqim, kelak di hari ketika banyak telapak kaki orang munafik yang tergelincir"
+      },
+      {
+        "id": 13,
+        "name": "Doa Setelah Wudhu",
+        "arabic":"اشْهَدُ اَنْ لاَّاِلَهَ اِلاَّاللهُ وَحْدَهُ لاَشَرِيْكَ لَهُ وَاَشْهَدُ اَنَّ مُحَمَّدًاعَبْدُهُ وَرَسُوْلُهُ. اَللّٰهُمَّ اجْعَلْنِىْ مِنَ التَّوَّابِيْنَ وَاجْعَلْنِىْ مِنَ الْمُتَطَهِّرِيْنَ، وَجْعَلْنِيْ مِنْ عِبَادِكَ الصَّالِحِيْنَ",
+        "latin": "Asyhadu allaa ilaaha illallaah, wahdahu laa syariika lahu, wa asyhadu anna muhammadan 'abduhu wa Rasuuluhu. Allahumma j'alnii minat tawwabiina, waj'alnii minal mutathahiriina waj'alnii min 'ibaadikash shalihiina",
+        "terjemahan": "Aku bersaksi bahwa tiada Tuhan melainkan Allah, tiada sekutu baginya, dan aku bersaksi bahwa Nabi Muhammad itu hamba dan utusanNya. Ya Allah! Jadikanlah aku dari golongan orang-orang yang bertaubat dan jadikanlah aku dari golongan orang-orang yang bersuci dan jadikanlah aku bagian dari hamba-hamba-Mu yang sholeh"
+      }
+  ]

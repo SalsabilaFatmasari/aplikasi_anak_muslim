@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "name": "Niat Sholat Rawatib  2 Rakaat Sebelum Subuh",
+      "arabic": "اُصَلِّى سُنَّةَ قَبْلِيَّةً الصُّبْحِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ ِللهِ تَعَالَى",
+      "latin": "Usholli sunnata qobliyyatas sh-shubhi rok'ataini mustaqbilal qiblati lillaahi ta'aala",
+      "terjemahan": "Aku niat melakukan shalat sunat sebelum subuh 2 rakaat, sambil menghadap qiblat karena Allah ta'ala"
+    },
+    {
+      "id": 2,
+      "name": "Niat Sholat Rawatib 2 Rakaat Sebelum Dzuhur",
+      "arabic": "اُصَلِّى سُنَّةَ قَبْلِيَّةً الظُّهْرِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ ِللهِ تَعَالَى",
+      "latin": "Usholli sunnata qobliyyatad dhuhri rok'ataini mustaqbilal qiblati lillaahi ta'ala",
+      "terjemahan": "Aku niat melakukan shalat sunat sebelum dzuhur 2 rakaat, sambil menghadap qiblat karena Allah ta'ala"
+    },
+    {
+      "id": 3,
+      "name": "Niat Sholat Rawatib 2 Rakaat Setelah Dzuhur",
+      "arabic": "اُصَلِّى سُنَّةَ بَعْدِيَّةً الظُّهْرِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ ِللهِ تَعَالَى",
+      "latin": "Usholli sunnata ba'diyyatad dhuhri rok'ataini mustaqbilal qiblati lillaahi ta'aala",
+      "terjemahan": "Aku niat melakukan shalat sunat sesudah dzuhur 2 rakaat, sambil menghadap qiblat karena Allah ta'ala"
+    },
+    {
+      "id": 4,
+      "name": "Niat Sholat Rawatib 2 Rakaat Sebelum Ashar",
+      "arabic": "اُصَلِّى سُنَّةَ قَبْلِيَّةً الْعَصْرِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ ِللهِ تَعَالَى",
+      "latin": "Usholli sunnata qobliyyatal 'ashri rok'ataini mustaqbilal qiblati lillaahi ta'ala",
+      "terjemahan": "Aku niat melakukan shalat sunat sebelum ashar 2 rakaat, sambil menghadap qiblat karena Allah ta'ala"
+    },
+    {
+      "id": 5,
+      "name": "Niat Sholat Rawatib 2 Rakaat Sebelum Magrib",
+      "arabic": "اُصَلِّى سُنَّةَ قَبْلِيَّةً الْمَغْرِبِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ ِللهِ تَعَالَى",
+      "latin": "Usholli sunnata qobliyyatal maghribi rok'ataini mustaqbilal qiblati lillaahi ta'ala",
+      "terjemahan": "Aku niat melakukan shalat sunat sebelum maghrib 2 rakaat, sambil menghadap qiblat karena Allah ta'ala"
+    },
+    {
+      "id": 6,
+      "name": "Niat Sholat Rawatib 2 Rakaat Setelah Magrib",
+      "arabic": "اُصَلِّى سُنَّةَ بَعْدِيَّةً الْمَغْرِبِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ ِللهِ تَعَالَى",
+      "latin": "Usholli sunnata ba'diyyatal maghribi rok'ataini mustaqbilal qiblati lillaahi ta'ala",
+      "terjemahan": "Aku niat melakukan shalat sunat sesudah maghribi 2 rakaat, sambil menghadap qiblat karena Allah ta'ala"
+    },
+    {
+      "id": 7,
+      "name": "Niat Sholat Rawatib 2 Rakaat Sebelum Isya",
+      "arabic": "اُصَلِّى سُنَّةَ قَبْلِيَّةً الْعِشَاءِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ ِللهِ تَعَالَى",
+      "latin": "Usholli sunnata qobliyyatal 'isya'i rok'ataini mustaqbilal qiblati lillaahi ta'aala",
+      "terjemahan": "Aku niat melakukan shalat sunat sebelum isya 2 rakaat, sambil menghadap qiblat karena Allah ta'ala"
+    },
+    {
+      "id": 8,
+      "name": "Niat Sholat Rawatib 2 Rakaat Setelah Isya",
+      "arabic": "اُصَلِّى سُنَّةَ بَعْدِيَّةً الْعِشَاءِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ ِللهِ تَعَالَى",
+      "latin": "Usholli sunnata ba'diyyatal 'isya'i rok'ataini mustaqbilal qiblati lillaahi ta'ala",
+      "terjemahan": "Aku niat melakukan shalat sunat sesudah isya' 2 rakaat, sambil menghadap qiblat karena Allah ta'ala"
+    }
+  ]

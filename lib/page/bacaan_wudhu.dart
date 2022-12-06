@@ -1,24 +1,24 @@
 import 'dart:convert';
-import 'package:apk_ank/model/model_niat.dart';
+import 'package:apk_ank/model/model_bacaan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
-class NiatSholat extends StatefulWidget {
-  const NiatSholat({Key? key}) : super(key: key);
+class BacaanWudhu extends StatefulWidget {
+  const BacaanWudhu({Key? key}) : super(key: key);
 
   @override
-  _NiatSholatState createState() => _NiatSholatState();
+  _BacaanWudhuState createState() => _BacaanWudhuState();
 }
 
-class _NiatSholatState extends State<NiatSholat> {
-  Future<List<ModelNiat>> ReadJsonData() async {
+class _BacaanWudhuState extends State<BacaanWudhu> {
+  Future<List<ModelBacaan>> ReadJsonData() async {
     final jsondata =
-        await rootBundle.rootBundle.loadString('assets/data/niatshalat.json');
+        await rootBundle.rootBundle.loadString('assets/data/bacaanwudhu.json');
     final list = json.decode(jsondata) as List<dynamic>;
-    return list.map((e) => ModelNiat.fromJson(e)).toList();
+    return list.map((e) => ModelBacaan.fromJson(e)).toList();
   }
 
- @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff0e1446),
@@ -55,14 +55,14 @@ class _NiatSholatState extends State<NiatSholat> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Niat Shalat Wajib",
+                              "Bacaan Wudhu",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Bacaan Niat Shalat Wajib",
+                              "Bacaan Ketika Berwudhu",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -83,7 +83,7 @@ class _NiatSholatState extends State<NiatSholat> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/ic_shalat_wajib.png", //ganti gambar
+                      "assets/images/bg_doa.png", //ganti gambar
                       width: 330,
                       height: 200,
                       fit: BoxFit.fitWidth,
@@ -92,6 +92,8 @@ class _NiatSholatState extends State<NiatSholat> {
                 ),
               ],
             ),
+
+
             SizedBox(height: 10),
             Expanded(
               child: Container(
@@ -101,10 +103,12 @@ class _NiatSholatState extends State<NiatSholat> {
                     if (data.hasError) {
                       return Center(child: Text("${data.error}"));
                     } else if (data.hasData) {
-                      var items = data.data as List<ModelNiat>;
+                      var items = data.data as List<ModelBacaan>;
                       return ListView.builder(
                           itemCount: items == null ? 0 : items.length,
                           itemBuilder: (context, index) {
+                            
+                            //judul
                             return Card(
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10)),
@@ -113,6 +117,8 @@ class _NiatSholatState extends State<NiatSholat> {
                               child: Theme(
                                 data: Theme.of(context)
                                     .copyWith(dividerColor: Colors.transparent),
+
+                                //ngebawah
                                 child: ExpansionTile(
                                   title: Text(
                                     items[index].name.toString(),
@@ -120,6 +126,7 @@ class _NiatSholatState extends State<NiatSholat> {
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold),
                                   ),
+
                                   children: [
                                     Container(
                                       padding: EdgeInsets.all(8),
@@ -137,6 +144,8 @@ class _NiatSholatState extends State<NiatSholat> {
                                                   MainAxisAlignment.center,
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
+                                              
+                                              //arab
                                               children: [
                                                 Padding(
                                                   padding: EdgeInsets.only(
@@ -151,6 +160,8 @@ class _NiatSholatState extends State<NiatSholat> {
                                                             FontWeight.bold),
                                                   ),
                                                 ),
+
+                                                //latin
                                                 Padding(
                                                   padding: EdgeInsets.only(
                                                       left: 8, right: 8),
@@ -164,6 +175,8 @@ class _NiatSholatState extends State<NiatSholat> {
                                                             FontStyle.italic),
                                                   ),
                                                 ),
+
+                                                //terjemahan
                                                 Padding(
                                                   padding: EdgeInsets.only(
                                                       left: 8,
@@ -176,7 +189,8 @@ class _NiatSholatState extends State<NiatSholat> {
                                                       style: TextStyle(
                                                         fontSize: 12,
                                                       )),
-                                                )
+                                                ),
+                                                
                                               ],
                                             ),
                                           ))

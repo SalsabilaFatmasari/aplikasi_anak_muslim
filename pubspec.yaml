@@ -64,12 +64,23 @@ flutter:
     - assets/images/ic_bacaan.png
     - assets/images/ic_doa.png
     - assets/images/ic_niat.png
-    - assets/images/bg_shalat.jpg
+    - assets/images/ic_shalat_wajib.png
+    - assets/images/bg_wajib.png
     - assets/images/bg_doa.png
     - assets/images/bg_quran.png
+    - assets/images/bg_wudhuphp.png
+    - assets/images/bg_dzikir.png
+    - assets/images/bg_qunutph.png
+    - assets/images/bg_sunnahph.png
+    - assets/images/bg_surahph.png
+    - assets/images/bg_bacaan_shalat.jpg
+    - assets/images/bg_qunut.png
+    - assets/images/doa.png
 
     - assets/data/bacaanshalat.json
     - assets/data/niatshalat.json
+    - assets/data/bacaanwudhu.json
+    - assets/data/niatshalatsunnah.json
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

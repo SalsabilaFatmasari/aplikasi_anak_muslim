@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AyatKursi extends StatefulWidget {
-  const AyatKursi({Key? key}) : super(key: key);
+class DoaQunut extends StatefulWidget {
+  const DoaQunut({Key? key}) : super(key: key);
 
   @override
-  _AyatKursiState createState() => _AyatKursiState();
+  _DoaQunutState createState() => _DoaQunutState();
 }
 
-class _AyatKursiState extends State<AyatKursi> {
+class _DoaQunutState extends State<DoaQunut> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,14 +41,14 @@ class _AyatKursiState extends State<AyatKursi> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Ayat Kursi",
+                              "Doa Qunut",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Bacaan Ayat Kursi dengan tafsirnya",
+                              "Bacaan Doa Qunut beserta Latin dan Terjemahannya",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -67,7 +67,7 @@ class _AyatKursiState extends State<AyatKursi> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/bg_quran.jpg",
+                      "assets/images/bg_quran.jpg", //ganti gambarnya
                       width: 330,
                       height: 200,
                       fit: BoxFit.fill,
@@ -130,29 +130,8 @@ class _AyatKursiState extends State<AyatKursi> {
                 margin: EdgeInsets.only(top: 20),
                 child: ListView(
                   children: [
-                    Center(
-                      child: Text(
-                        "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                    Center(
-                      child: Text(
-                        "Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontStyle: FontStyle.italic),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
                     SelectableText(
-                      "اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ وَّلَا نَوْمٌۗ  لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحِيْطُوْنَ بِشَيْءٍ مِّنْ عِلْمِهٖٓ اِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ",
+                      "للّٰهُمَّ اهْدِنِىْ فِيْمَنْ هَدَيْتَ وَعَافِنِى فِيْمَنْ عَافَيْتَ وَتَوَلَّنِىْ فِيْمَنْ تَوَلَّيْتَ وَبَارِكْ لِىْ فِيْمَا اَعْطَيْتَ وَقِنِيْ شَرَّمَا قَضَيْتَ فَاِنَّكَ تَقْضِىْ وَلاَ يُقْضٰى عَلَيْكَ وَاِ نَّهُ لاَ يَذِلُّ مَنْ وَالَيْتَ وَلاَ يَعِزُّ مَنْ عَادَيْتَ تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ فَلَكَ الْحَمْدُ عَلَى مَا قَضَيْتَ وَاَسْتَغْفِرُكَ وَاَتُوْبُ اِلَيْكَ وَصَلَّى اللهُ عَلَى سَيِّدَنَا مُحَمَّدٍ النَّبِيِّ اْلاُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
@@ -165,7 +144,7 @@ class _AyatKursiState extends State<AyatKursi> {
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10),
                       child: SelectableText(
-                        "Allaahu laa ilaaha illaa huwal hayyul qoyyuum, laa ta'khudzuhuu sinatuw walaa naum. Lahuu maa fissamaawaati wa maa fil ardli man dzal ladzii yasyfa’u ‘indahuu illaa biidznih, ya’lamu maa baina aidiihim wamaa kholfahum wa laa yuhiithuuna bisyai’im min ‘ilmihii illaa bimaa syaa’ wasi’a kursiyyuhus samaawaati wal ardlo walaa ya’uuduhuu hifdhuhumaa wahuwal ‘aliyyul ‘adhiim.",
+                        "Allahummah diinii fiiman hadait wa aafinii fiman aafait. Watawallanii fiiman tawallait wabaariklii fiimaa a'thait. Waqinii birahmatika syarra maa qadlait. Fa innaka taqdlii w alaa yuodlaa 'alaik, wa-innahu laa yadzillu man waalait. Walaa ya'izzu man aadait. Tabaarakta rabbanaa wata 'aalait. Falakal hamdu 'alaa maa qadlait astaghfiruka wa-atuubu i laik. Washallallaahu'alaa sayyidinaa muhammadin nabyyil ummiyyi wa-'alaa aalihi washahbihi wasallam",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,
@@ -179,7 +158,7 @@ class _AyatKursiState extends State<AyatKursi> {
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10),
                       child: SelectableText(
-                        "Terjemahan : Allah, tidak ada tuhan selain Dia. Yang Mahahidup, Yang terus menerus mengurus (makhluk-Nya), tidak mengantuk dan tidak tidur. Milik-Nya apa yang ada di langit dan apa yang ada di bumi. Tidak ada yang dapat memberi syafaat di sisi-Nya tanpa izin-Nya. Dia mengetahui apa yang di hadapan mereka dan apa yang di belakang mereka, dan mereka tidak mengetahui sesuatu apa pun tentang ilmu-Nya melainkan apa yang Dia kehendaki. Kursi-Nya meliputi langit dan bumi. Dan Dia tidak merasa berat memelihara keduanya, dan Dia Mahatinggi, Mahabesar.",
+                        "Ya Allah, berilah aku petunjuk seperti orang-orang yang telah Engkau beri petunjuk. Berilah aku kesehatan seperti orang yang telah Engkau beri kesehatan. Berilah berkah pada segala apa yang telah Engkau berikan kepadaku. Dan peliharalah aku dari kejahatan yang Engkau pastikan. Sesungguhnya tidaklah akan hina orang-orang yang telah Engkau beri kekuasaan. Dan tidak akan mulia orang yang Engkau musuhi. Maha berkahlah Engkau dan Maha Luhurlah Engkau. Segala Puji bagiMu atas yang telah Engkau pastikan. Aku mohon ampun dan kembalilah (taubat) kepada Engkau. Semoga Allah memberi rahmat, berkah dan salam atas Nabi Muhammad beserta keluarganya",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 14,
