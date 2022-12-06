@@ -81,6 +81,7 @@ flutter:
     - assets/data/niatshalat.json
     - assets/data/bacaanwudhu.json
     - assets/data/niatshalatsunnah.json
+    - assets/data/dzikir.json
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
