@@ -1,7 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:apk_ank/page/ayat_kursi_page.dart';
 import 'package:apk_ank/page/bacaan_shalat_page.dart';
 import 'package:apk_ank/page/niat_shalat_page.dart';
-import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -10,109 +10,210 @@ class MainPage extends StatefulWidget {
   _MainPageState createState() => _MainPageState();
 }
 
-class _MainPageState extends State<MainPage> {
+class _MainPageState extends State<MainPage>{
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                margin: EdgeInsets.all(10),
-                child: Expanded(
-                  child: InkWell(
-                    highlightColor: Colors.transparent,
-                    splashColor: Colors.transparent,
-                    onTap: () {
-                      Navigator.push(
+      appBar: AppBar(
+        backgroundColor: Color(0xff0e1446),
+        title: const Text("Belajar Shalat"),
+      ),
+      body: GridView.count(
+        padding: const EdgeInsets.all(25),
+        crossAxisCount: 2,
+        children: <Widget>[
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: (){
+                Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => NiatSholat()));
-                    },
-                    child: Column(
-                      children: [
-                        Image(
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Image(
                           image: AssetImage("assets/images/ic_niat.png"),
                           height: 100,
                           width: 100,
                         ),
-                        SizedBox(height: 10),
-                        Text(
-                          "Niat Sholat",
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    ),
-                  ),
+                    Text("Wudhu", style: TextStyle(fontSize: 17.0)),
+                  ],
                 ),
               ),
-              SizedBox(height: 40),
-              Container(
-                margin: EdgeInsets.all(10),
-                child: Expanded(
-                  child: InkWell(
-                    highlightColor: Colors.transparent,
-                    splashColor: Colors.transparent,
-                    onTap: () {
-                      Navigator.push(
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: (){
+                Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => BacaanSholat()));
-                    },
-                    child: Column(
-                      children: [
-                        Image(
-                          image: AssetImage("assets/images/ic_doa.png"),
+                              builder: (context) => NiatSholat()));
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Image(
+                          image: AssetImage("assets/images/ic_niat.png"),
                           height: 100,
                           width: 100,
                         ),
-                        SizedBox(height: 10),
-                        Text(
-                          "Bacaan Sholat",
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    ),
-                  ),
+                    Text("Niat Shalat Wajib", style: TextStyle(fontSize: 17.0)),
+                  ],
                 ),
               ),
-              SizedBox(height: 40),
-              Container(
-                margin: EdgeInsets.all(10),
-                child: Expanded(
-                  child: InkWell(
-                    highlightColor: Colors.transparent,
-                    splashColor: Colors.transparent,
-                    onTap: () {
-                      Navigator.push(context,
+            ),
+          ),
+
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: (){
+                Navigator.push(context,
                           MaterialPageRoute(builder: (context) => AyatKursi()));
-                    },
-                    child: Column(
-                      children: [
-                        Image(
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Image(
                           image: AssetImage("assets/images/ic_bacaan.png"),
                           height: 100,
                           width: 100,
                         ),
-                        SizedBox(height: 10),
-                        Text(
-                          "Ayat Kursi",
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    ),
-                  ),
+                    Text("Niat Shalat Wajib", style: TextStyle(fontSize: 17.0)),
+                  ],
                 ),
               ),
-            ],
+            ),
           ),
-        ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: (){
+                 Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => BacaanSholat()));
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Image(
+                          image: AssetImage("assets/images/ic_doa.png"),
+                          height: 100,
+                          width: 100,
+                        ),
+                    Text("Bacaan Shalat", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: (){
+                Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => AyatKursi()));
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Image(
+                          image: AssetImage("assets/images/ic_bacaan.png"),
+                          height: 100,
+                          width: 100,
+                        ),
+                    Text("Doa Qunut", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: (){
+                Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => AyatKursi()));
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Image(
+                          image: AssetImage("assets/images/ic_bacaan.png"),
+                          height: 100,
+                          width: 100,
+                        ),
+                    Text("Doa Setelah Shalat", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: (){
+                Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => AyatKursi()));
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Image(
+                          image: AssetImage("assets/images/ic_bacaan.png"),
+                          height: 100,
+                          width: 100,
+                        ),
+                    Text("Doa Sehari Hari", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: (){
+                Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => AyatKursi()));
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Image(
+                          image: AssetImage("assets/images/ic_bacaan.png"),
+                          height: 100,
+                          width: 100,
+                        ),
+                    Text("Surah Pendek", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
