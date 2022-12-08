@@ -1,4 +1,5 @@
 import 'package:apk_ank/page/bacaan_wudhu.dart';
+import 'package:apk_ank/page/dzikir.dart';
 import 'package:apk_ank/page/niat_shalat__sunnah_page.dart';
 import 'package:flutter/material.dart';
 import 'package:apk_ank/page/ayat_kursi_page.dart';
@@ -161,7 +162,7 @@ class _MainPageState extends State<MainPage>{
             child: InkWell(
               onTap: (){
                 Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => AyatKursi()));
+                          MaterialPageRoute(builder: (context) => Dzikir()));
               },
               splashColor: Colors.blue,
               child: Center(

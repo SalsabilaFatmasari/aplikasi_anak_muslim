@@ -14,7 +14,7 @@ class _DzikirState extends State<Dzikir> {
       backgroundColor: Color(0xff44aca0),
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Stack(
               children: [
@@ -41,14 +41,14 @@ class _DzikirState extends State<Dzikir> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Ayat Kursi",
+                              "Dzikir",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Bacaan Ayat Kursi dengan tafsirnya",
+                              "Bacaan Dzikir Setelah Shalat",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -67,7 +67,7 @@ class _DzikirState extends State<Dzikir> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/bg_quran.jpg",
+                      "assets/images/bg_dzikir.png",
                       width: 330,
                       height: 200,
                       fit: BoxFit.fill,
@@ -98,10 +98,10 @@ class _DzikirState extends State<Dzikir> {
                                   context: context,
                                   builder: (_) => AlertDialog(
                                         title: Center(
-                                            child: Text("Tafsir Ayat Kursi")),
+                                            child: Text("Dalil")),
                                         content: SingleChildScrollView(
                                           child: Text(
-                                            "Allah adalah Tuhan Yang Maha Esa, tidak ada tuhan selain Dia, dan hanya Dia yang berhak untuk disembah. Adapun tuhan-tuhan yang lain yang disembah oleh sebagian manusia dengan alasan yang tidak benar, memang banyak jumlahnya. Akan tetapi Tuhan yang sebenarnya hanyalah Allah. Hanya Dialah Yang hidup abadi, yang ada dengan sendiri-Nya, dan Dia pulalah yang selalu mengatur makhluk-Nya tanpa ada kelalaian sedikit pun.\n\nKemudian ditegaskan lagi bahwa Allah tidak pernah mengantuk. Orang yang berada dalam keadaan mengantuk tentu hilang kesadarannya, sehingga dia tidak akan dapat melakukan pekerjaannya dengan baik, padahal Allah swt senantiasa mengurus dan memelihara makhluk-Nya dengan baik, tidak pernah kehilangan kesadaran atau pun lalai.\n\nKarena Allah tidak pernah mengantuk, sudah tentu Dia tidak pernah tidur, karena mengantuk adalah permulaan dari proses tidur. Orang yang tidur lebih banyak kehilangan kesadaran daripada orang yang mengantuk.\n\nSifat Allah yang lain yang disebutkan dalam ayat ini ialah bahwa Dialah yang mempunyai kekuasaan dan yang memiliki apa yang ada di langit dan di bumi. Dialah yang mempunyai kekuatan dan kekuasaan yang tak terbatas, sehingga Dia dapat berbuat apa yang dikehendaki-Nya. Semuanya ada dalam kekuasaan-Nya, sehingga tidak ada satu pun dari makhluk-Nya termasuk para nabi dan para malaikat yang dapat memberikan pertolongan kecuali dengan izin-Nya, apalagi patung-patung yang oleh orang-orang kafir dianggap sebagai penolong mereka.\n\nYang dimaksud dengan \"pertolongan\" atau \"syafaat\" dalam ayat ini ialah pertolongan yang diberikan oleh para malaikat, nabi dan orang-orang saleh kepada umat manusia pada hari kiamat untuk mendapatkan keringanan atau kebebasan dari hukuman Allah. Syafaat itu akan terjadi atas izin Allah. Dalam hadis disebutkan :\n\nNabi Saw bersabda, \"¦Kemudian Allah berfirman, \"Para Malaikat memberikan syafaat, para Nabi memberikan syafaat, dan orang-orang mukmin juga memberikan syafaat. (Riwayat Ahmad dan Muslim dari Abu Sa'id al-Khudri)\n\nSifat Allah yang lain yang disebutkan dalam ayat ini ialah: bahwa Allah senantiasa mengetahui apa saja yang terjadi di hadapan dan di belakang makhluk-Nya, sedang mereka tidak mengetahui sesuatu pun dari ilmu Allah, melainkan sekadar apa yang dikehendaki-Nya untuk mereka ketahui. Kursi Allah mencakup langit dan bumi. Allah tidak merasa berat sedikit pun dalam memelihara makhluk-Nya yang berada di langit dan di bumi, dan di semua alam ciptaan-Nya. Allah Mahatinggi lagi Mahabesar.\n\nMereka tidak mengetahui ilmu Allah, kecuali apa yang telah dikehendaki-Nya untuk mereka ketahui. Dengan demikian, yang dapat diketahui oleh manusia hanyalah sekadar apa yang dapat dijangkau oleh pengetahuan yang telah dikaruniakan Allah kepada mereka, dan jumlahnya amat sedikit dibanding dengan ilmu-Nya yang luas. Hal ini ditegaskan Allah dalam firman-Nya:\n\n\"Sedangkan kamu diberi pengetahuan hanya sedikit.\" (al-Isra' 17:85)",
+                                            " Ada dua perkara, sekiranya keduanya itu selalu dijaga oleh seorang muslim, maka ia akan masuk surga. Dua perkara itu sangat mudah untuk dikerjakan, tetapi sedikit yang mau melaksanakannya. Yaitu; setiap selesai shalat mengucapkan tasbih sebanyak sepuluh kali, tahmid sepuluh kali, dan takbir sepuluh kali. Hal itu akan sama dengan seratus lima puluh dengan lisan dan seribu lima ratus dalam timbangan. Membaca takbir sebanyak tiga puluh empat jika akan tidur, membaca tahmid sebanyak tiga puluh tiga dan membaca tasbih sebanyak tiga puluh tiga, maka itu adalah seratus dalam hitungan lisan dan seribu dalam hitungan timbangan",
                                             textAlign: TextAlign.justify,
                                           ),
                                         ),
@@ -109,7 +109,7 @@ class _DzikirState extends State<Dzikir> {
                             },
                             child: Center(
                               child: Text(
-                                "Tafsir",
+                                "Dalil",
                                 style: TextStyle(
                                     letterSpacing: 2,
                                     fontSize: 18,
@@ -130,63 +130,254 @@ class _DzikirState extends State<Dzikir> {
                 margin: EdgeInsets.only(top: 20),
                 child: ListView(
                   children: [
-                    Center(
+                    Align(
                       child: Text(
-                        "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ",
+                       "أَسْتَغْفِرُ اللهَ (3x) اَللَّهُمَّ أَنْتَ السَّلاَمُ، وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَاْلإِكْرَامِ",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
                       ),
                     ),
-                    Center(
+                    Align(
                       child: Text(
-                        "Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang",
+                        "Astaghfirullah (3x). Allahumma antas salaam wa minkas salaam tabaarokta yaa dzal jalaali wal ikrom",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.center
+                      ),
+                    ),
+                    Align(
+                      child: Padding(
+                    padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Aku minta ampun kepada Allah,” (3x). Lantas membaca: “Ya Allah, Engkau pemberi keselamatan, dan dariMu keselamatan, Maha Suci Engkau, wahai Tuhan Yang Pemilik Keagungan dan Kemuliaan",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
                       ),
                     ),
-                    SizedBox(
-                      height: 20,
                     ),
-                    SelectableText(
-                      "اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ وَّلَا نَوْمٌۗ  لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحِيْطُوْنَ بِشَيْءٍ مِّنْ عِلْمِهٖٓ اِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
+                    
+                    Align(
+                      child: Padding(
+                    padding: EdgeInsets.only(top: 20),
+                      child: Text(
+                       "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ، اَللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
+                      ),
                     ),
-                    SizedBox(
-                      height: 10,
                     ),
-                    Container(
-                      margin: EdgeInsets.only(left: 10, right: 10),
-                      child: SelectableText(
-                        "Allaahu laa ilaaha illaa huwal hayyul qoyyuum, laa ta'khudzuhuu sinatuw walaa naum. Lahuu maa fissamaawaati wa maa fil ardli man dzal ladzii yasyfa’u ‘indahuu illaa biidznih, ya’lamu maa baina aidiihim wamaa kholfahum wa laa yuhiithuuna bisyai’im min ‘ilmihii illaa bimaa syaa’ wasi’a kursiyyuhus samaawaati wal ardlo walaa ya’uuduhuu hifdhuhumaa wahuwal ‘aliyyul ‘adhiim.",
+
+                    Align(
+                      child: Text(
+                        "Laa ilaha illallah wahdahu laa syarika lah, lahul mulku wa lahul hamdu wa huwa ‘ala kulli syai-in qodiir. Allahumma laa maani’a limaa a’thoyta wa laa mu’thiya limaa mana’ta wa laa yanfa’u dzal jaddi minkal jaddu",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
-                        textAlign: TextAlign.justify,
                       ),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(left: 10, right: 10),
-                      child: SelectableText(
-                        "Terjemahan : Allah, tidak ada tuhan selain Dia. Yang Mahahidup, Yang terus menerus mengurus (makhluk-Nya), tidak mengantuk dan tidak tidur. Milik-Nya apa yang ada di langit dan apa yang ada di bumi. Tidak ada yang dapat memberi syafaat di sisi-Nya tanpa izin-Nya. Dia mengetahui apa yang di hadapan mereka dan apa yang di belakang mereka, dan mereka tidak mengetahui sesuatu apa pun tentang ilmu-Nya melainkan apa yang Dia kehendaki. Kursi-Nya meliputi langit dan bumi. Dan Dia tidak merasa berat memelihara keduanya, dan Dia Mahatinggi, Mahabesar.",
+                    Align(
+                      child: Padding(
+                    padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Tiada Rabb yang berhak disembah selain Allah Yang Maha Esa, tidak ada sekutu bagi-Nya. Bagi-Nya puji dan bagi-Nya kerajaan. Dia Maha Kuasa atas segala sesuatu. Ya Allah, tidak ada yang mencegah apa yang Engkau berikan dan tidak ada yang memberi apa yang Engkau cegah. Tidak berguna kekayaan dan kemuliaan itu bagi pemiliknya (selain iman dan amal shalihnya yang menyelamatkan dari siksaan). Hanya dari-Mu kekayaan dan kemuliaan",
                         style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 14,
-                        ),
-                        textAlign: TextAlign.justify,
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
                       ),
                     ),
+                    ),
+                    
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      child: Text(
+                       "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ. لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللهِ، لاَ إِلَـهَ إِلاَّ اللهُ، وَلاَ نَعْبُدُ إِلاَّ إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ، لاَ إِلَـهَ إِلاَّ اللهُ مُخْلِصِيْنَ لَهُ الدِّيْنَ وَلَوْ كَرِهَ الْكَافِرُوْنَ",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
+                      ),
+                      )
+                    ),
+                    Align(
+                      child: Text(
+                        "Laa ilaha illallah wahdahu laa syarika lah. Lahul mulku wa lahul hamdu wa huwa ‘ala kulli syai-in qodiir. Laa hawla wa laa quwwata illa billah. Laa ilaha illallah wa laa na’budu illa iyyaah. Lahun ni’mah wa lahul fadhlu wa lahuts tsanaaul hasan. Laa ilaha illallah mukhlishiina lahud diin wa law karihal kaafiruun.",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                    Align(
+                      child: Padding(
+                    padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Tiada Rabb (yang berhak disembah) kecuali Allah, Yang Maha Esa, tidak ada sekutu bagi-Nya. Bagi-Nya kerajaan dan pujaan. Dia Mahakuasa atas segala sesuatu. Tidak ada daya dan kekuatan kecuali (dengan pertolongan) Allah. Tiada Rabb (yang hak disembah) kecuali Allah. Kami tidak menyembah kecuali kepada-Nya. Bagi-Nya nikmat, anugerah dan pujaan yang baik. Tiada Rabb (yang hak disembah) kecuali Allah, dengan memurnikan ibadah kepadaNya, sekalipun orang-orang kafir sama benci",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      child: Text("سُبْحَانَ اللهِ (33 ×)",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        main
+                        ,
+                      ),
+                      )
+                    ),
+                    Align(
+                      child: Text(
+                        "Subhanallah (33x)",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                    Align(
+                      child: Padding(
+                    padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Maha Suci Allah (33x)",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      child: Text("اَلْحَمْدُ لِلَّهِ (33 ×)",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
+                      ),
+                      )
+                    ),
+                    Align(
+                      child: Text(
+                        "Alhamdulillah (33x)",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                    Align(
+                      child: Padding(
+                    padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Segala Puji Bagi Allah (33x)",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      child: Text("(اَللهُ أَكْبَرُ (33 ",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
+                      ),
+                      )
+                    ),
+                    Align(
+                      child: Text(
+                        "Alllahu Akbar(33x)",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                    Align(
+                      child: Padding(
+                    padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Allah Maha Besar (33x)",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      child: Text("لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْ",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
+                      ),
+                      )
+                    ),
+                    Align(
+                      child: Text(
+                        "Laa ilaha illallah wahdahu laa syarika lah. Lahul mulku wa lahul hamdu wa huwa ‘ala kulli syai-in qodiir",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                    Align(
+                      child: Padding(
+                    padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Tidak ada Rabb (yang berhak disembah) kecuali Allah Yang Maha Esa, tidak ada sekutu bagi-Nya. Bagi-Nya kerajaan. Bagi-Nya pujaan. Dia-lah Yang Mahakuasa atas segala sesuatu.",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ),
+                    ),
+
                   ],
                 ),
               ),
