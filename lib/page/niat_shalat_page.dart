@@ -92,6 +92,8 @@ class _NiatSholatState extends State<NiatSholat> {
                 ),
               ],
             ),
+
+            //list
             SizedBox(height: 10),
             Expanded(
               child: Container(
@@ -168,7 +170,8 @@ class _NiatSholatState extends State<NiatSholat> {
                                                   padding: EdgeInsets.only(
                                                       left: 8,
                                                       right: 8,
-                                                      top: 5),
+                                                      top: 5,
+                                                      bottom: 10),
                                                   child: Text(
                                                       items[index]
                                                           .terjemahan
@@ -176,7 +179,10 @@ class _NiatSholatState extends State<NiatSholat> {
                                                       style: TextStyle(
                                                         fontSize: 12,
                                                       )),
-                                                )
+                                                ),
+                                                Icon(
+                                                  Icons.play_arrow,
+                                                  )
                                               ],
                                             ),
                                           ))
