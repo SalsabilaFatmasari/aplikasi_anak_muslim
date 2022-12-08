@@ -37,6 +37,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   audioplayers: ^1.1.1
+  flutter_tawk: ^0.1.0
 
 dev_dependencies:
   flutter_test:
@@ -77,6 +78,7 @@ flutter:
     - assets/images/bg_bacaan_shalat.jpg
     - assets/images/bg_qunut.png
     - assets/images/doa.png
+    - assets/images/ic_wudhu.jpg
 
     - assets/data/bacaanshalat.json
     - assets/data/niatshalat.json

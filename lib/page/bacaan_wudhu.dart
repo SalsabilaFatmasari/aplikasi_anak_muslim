@@ -28,8 +28,6 @@ class _BacaanWudhuState extends State<BacaanWudhu> {
           children: [
             Stack(
               children: [
-                
-                //tombol back
                 Align(
                   alignment: Alignment.topLeft,
                   child: IconButton(
@@ -37,8 +35,6 @@ class _BacaanWudhuState extends State<BacaanWudhu> {
                     icon: Icon(Icons.arrow_back, color: Colors.white),
                   ),
                 ),
-
-                //tampilan header
                 Align(
                   alignment: Alignment.topLeft,
                   child: Container(
@@ -55,14 +51,14 @@ class _BacaanWudhuState extends State<BacaanWudhu> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Bacaan Wudhu",
+                              "Bacaan Sholat",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Bacaan Ketika Berwudhu",
+                              "Bacaan sholat dari doa Iftitah sampai Salam",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -72,8 +68,6 @@ class _BacaanWudhuState extends State<BacaanWudhu> {
                         )),
                   ),
                 ),
-
-                //header kotak kanan
                 Align(
                   alignment: Alignment.topRight,
                   child: ClipRRect(
@@ -83,7 +77,7 @@ class _BacaanWudhuState extends State<BacaanWudhu> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/bg_doa.png", //ganti gambar
+                      "assets/images/ic_wudhu.jpg",
                       width: 330,
                       height: 200,
                       fit: BoxFit.fitWidth,
