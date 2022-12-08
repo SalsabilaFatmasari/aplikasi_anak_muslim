@@ -128,6 +128,8 @@ class _DzikirState extends State<Dzikir> {
             Expanded(
               child: Container(
                 margin: EdgeInsets.only(top: 20),
+                padding: EdgeInsets.all(20),
+                alignment: Alignment.topLeft,
                 child: ListView(
                   children: [
                     Align(
@@ -148,7 +150,7 @@ class _DzikirState extends State<Dzikir> {
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
-                            textAlign: TextAlign.center
+                            textAlign: TextAlign.justify
                       ),
                     ),
                     Align(
@@ -160,6 +162,7 @@ class _DzikirState extends State<Dzikir> {
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
                       ),
                     ),
                     ),
@@ -186,6 +189,7 @@ class _DzikirState extends State<Dzikir> {
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
                       ),
                     ),
                     Align(
@@ -197,6 +201,7 @@ class _DzikirState extends State<Dzikir> {
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
                       ),
                     ),
                     ),
@@ -216,14 +221,18 @@ class _DzikirState extends State<Dzikir> {
                       )
                     ),
                     Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
                       child: Text(
                         "Laa ilaha illallah wahdahu laa syarika lah. Lahul mulku wa lahul hamdu wa huwa ‘ala kulli syai-in qodiir. Laa hawla wa laa quwwata illa billah. Laa ilaha illallah wa laa na’budu illa iyyaah. Lahun ni’mah wa lahul fadhlu wa lahuts tsanaaul hasan. Laa ilaha illallah mukhlishiina lahud diin wa law karihal kaafiruun.",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
                       ),
-                    ),
+                    )),
+
                     Align(
                       child: Padding(
                     padding: EdgeInsets.only(top: 10),
@@ -233,11 +242,13 @@ class _DzikirState extends State<Dzikir> {
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
                       ),
                     ),
                     ),
 
                     Align(
+                      alignment: Alignment.topRight,
                       child: Padding(
                         padding: EdgeInsets.only(top: 20),
                       child: Text("سُبْحَانَ اللهِ (33 ×)",
@@ -245,13 +256,13 @@ class _DzikirState extends State<Dzikir> {
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.right
-                        
-                        ,
                       ),
                       )
                     ),
                     Align(
+                      alignment: Alignment.topLeft,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
                       child: Text(
                         "Subhanallah (33x)",
                         style: TextStyle(
@@ -259,10 +270,12 @@ class _DzikirState extends State<Dzikir> {
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
                       ),
-                    ),
+                    )),
+
                     Align(
+                      alignment: Alignment.topLeft,
                       child: Padding(
-                    padding: EdgeInsets.only(top: 10),
+                      padding: EdgeInsets.only(top: 10),
                       child: Text(
                         "Maha Suci Allah (33x)",
                         style: TextStyle(
@@ -274,6 +287,7 @@ class _DzikirState extends State<Dzikir> {
                     ),
 
                     Align(
+                      alignment: Alignment.topRight,
                       child: Padding(
                         padding: EdgeInsets.only(top: 20),
                       child: Text("اَلْحَمْدُ لِلَّهِ (33 ×)",
@@ -287,6 +301,9 @@ class _DzikirState extends State<Dzikir> {
                       )
                     ),
                     Align(
+                      alignment: Alignment.topLeft,
+                      child: Padding(
+                      padding: EdgeInsets.only(top: 10),
                       child: Text(
                         "Alhamdulillah (33x)",
                         style: TextStyle(
@@ -294,8 +311,10 @@ class _DzikirState extends State<Dzikir> {
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
                       ),
-                    ),
+                    )),
+
                     Align(
+                      alignment: Alignment.topLeft,
                       child: Padding(
                     padding: EdgeInsets.only(top: 10),
                       child: Text(
@@ -309,6 +328,7 @@ class _DzikirState extends State<Dzikir> {
                     ),
 
                     Align(
+                      alignment: Alignment.topRight,
                       child: Padding(
                         padding: EdgeInsets.only(top: 20),
                       child: Text("(اَللهُ أَكْبَرُ (33 ",
@@ -316,12 +336,11 @@ class _DzikirState extends State<Dzikir> {
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.right
-                        ,
                       ),
                       )
                     ),
                     Align(
+                      alignment: Alignment.topLeft,
                       child: Text(
                         "Alllahu Akbar(33x)",
                         style: TextStyle(
@@ -331,14 +350,16 @@ class _DzikirState extends State<Dzikir> {
                       ),
                     ),
                     Align(
+                      alignment: Alignment.topLeft,
                       child: Padding(
-                    padding: EdgeInsets.only(top: 10),
+                        padding: EdgeInsets.only(top: 10),
                       child: Text(
                         "Allah Maha Besar (33x)",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
+                            
                       ),
                     ),
                     ),
@@ -357,14 +378,20 @@ class _DzikirState extends State<Dzikir> {
                       )
                     ),
                     Align(
+                      alignment: Alignment.topLeft,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
                       child: Text(
                         "Laa ilaha illallah wahdahu laa syarika lah. Lahul mulku wa lahul hamdu wa huwa ‘ala kulli syai-in qodiir",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
                       ),
                     ),
+                    ),
+
                     Align(
                       child: Padding(
                     padding: EdgeInsets.only(top: 10),
@@ -374,6 +401,217 @@ class _DzikirState extends State<Dzikir> {
                             color: Colors.white,
                             fontSize: 12,
                             fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      child: Text("اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ وَّلَا نَوْمٌۗ  لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحِيْطُوْنَ بِشَيْءٍ مِّنْ عِلْمِهٖٓ اِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
+                      ),
+                      )
+                    ),
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Allaahu laa ilaaha illaa huwal hayyul qoyyuum, laa ta'khudzuhuu sinatuw walaa naum. Lahuu maa fissamaawaati wa maa fil ardli man dzal ladzii yasyfa’u ‘indahuu illaa biidznih, ya’lamu maa baina aidiihim wamaa kholfahum wa laa yuhiithuuna bisyai’im min ‘ilmihii illaa bimaa syaa’ wasi’a kursiyyuhus samaawaati wal ardlo walaa ya’uuduhuu hifdhuhumaa wahuwal ‘aliyyul ‘adhiim",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Terjemahan : Allah, tidak ada tuhan selain Dia. Yang Mahahidup, Yang terus menerus mengurus (makhluk-Nya), tidak mengantuk dan tidak tidur. Milik-Nya apa yang ada di langit dan apa yang ada di bumi. Tidak ada yang dapat memberi syafaat di sisi-Nya tanpa izin-Nya. Dia mengetahui apa yang di hadapan mereka dan apa yang di belakang mereka, dan mereka tidak mengetahui sesuatu apa pun tentang ilmu-Nya melainkan apa yang Dia kehendaki. Kursi-Nya meliputi langit dan bumi. Dan Dia tidak merasa berat memelihara keduanya, dan Dia Mahatinggi, Mahabesar.",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      child: Text("بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ.ٱللَّهُ ٱلصَّمَدُ. لَمْ يَلِدْ وَلَمْ يُولَدْ.وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ " ,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
+                      ),
+                      )
+                    ),
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Bismillahirrahmanirrahim. Qul huwallahu ahad. Allahus-samad. Lam yalid wa lam yulad. Wa lam yakul lahu kufuwan ahad",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Dengan menyebut nama Allah yang Maha pengasih lagi Maha Penyayanng. Katakanlah (Muhammad), “Dialah Allah, Yang Maha Esa”. Allah tempat meminta segala sesuatu. (Allah) tidak beranak dan tidak pula diperanakkan. Dan tidak ada sesuatu yang setara dengan Dia.",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      child: Text("بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ قُلۡ اَعُوۡذُ بِرَبِّ الۡفَلَقِۙ مِنۡ شَرِّ مَا خَلَقَۙ وَمِنۡ شَرِّ غَاسِقٍ اِذَا وَقَبَۙ وَمِنۡ شَرِّ النَّفّٰثٰتِ فِى الۡعُقَدِۙ وَمِنۡ شَرِّ حَاسِدٍ اِذَا حَسَدَ",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
+                      ),
+                      )
+                    ),
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Bismillahirrahmanirrahim. Qul a'uzuu bi rabbil-falaq. Min sharri ma khalaq. Wa min sharri ghasiqin iza waqab. Wa min sharrin-naffaa-thaati fil 'uqad. Wa min shar ri haasidin iza hasad.",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah, Aku berlindung kepada Tuhan yang menguasai subuh (fajar). Dari kejahatan (makhluk yang) Dia ciptakan. Dan dari kejahatan malam apabila telah gelap gulita. Dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya). Dan dari kejahatan orang yang dengki apabila dia dengki. ",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      child: Text(" .بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ اَعُوْذُ بِرَبِّ النَّاسِ مَلِكِ النَّاسِۙ. اِلٰهِ النَّاسِۙ. مِنۡ شَرِّ الۡوَسۡوَاسِ  ۙ الۡخَـنَّاسِ الَّذِىۡ يُوَسۡوِسُ فِىۡ صُدُوۡرِ النَّاسِۙ. مِنَ الۡجِنَّةِ وَالنَّاسِ",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
+                      ),
+                      )
+                    ),
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Bismillahirrahmanirrahim. Qul a'uzu birabbin naas. Malikin naas. Ilaahin naas. Min sharril was waasil khannaas. Al lazii yuwas wisu fii suduurin naas. Minal jinnati wan naas.",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Dengan menyebut nama Allah yang Maha Pengasih lagi Maha Penyayang. Katakanlah, Aku berlindung kepada Tuhannya manusia. Raja manusia. Sembahan manusia. Dari kejahatan (bisikan) setan yang bersembunyi. Yang membisikkan (kejahatan) ke dalam dada manusia. Dari (golongan) jin dan manusia.",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 20),
+                      child: Text("اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلاً مُتَقَبَّلاً",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right
+                        ,
+                      ),
+                      )
+                    ),
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "llahumma inni as-aluka ‘ilman naafi’a, wa rizqon thoyyiba, wa ‘amalan mutaqobbala.",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
+                      ),
+                    ),
+                    ),
+
+                    Align(
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Ya Allah, sungguh aku memohon kepada-Mu ilmu yang bermanfaat (bagi diriku dan orang lain), rizki yang halal dan amal yang diterima (di sisi-Mu dan mendapatkan ganjaran yang baik.",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic),
+                            textAlign: TextAlign.justify
                       ),
                     ),
                     ),

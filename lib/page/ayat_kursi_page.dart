@@ -128,6 +128,7 @@ class _AyatKursiState extends State<AyatKursi> {
             Expanded(
               child: Container(
                 margin: EdgeInsets.only(top: 20),
+                padding: EdgeInsets.all(20),
                 child: ListView(
                   children: [
                     Center(
@@ -152,12 +153,12 @@ class _AyatKursiState extends State<AyatKursi> {
                       height: 20,
                     ),
                     SelectableText(
-                      "اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ وَّلَا نَوْمٌۗ  لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحِيْطُوْنَ بِشَيْءٍ مِّنْ عِلْمِهٖٓ اِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ",
+                      " .بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم اَلْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِيْنَ. حَمْدًا يُوَافِيْ نِعَمَهُ وَيُكَافِئُ مَزِيْدَهُ. يَا رَبَّنَا لَكَ الْحَمْدُ كَمَا يَنْبَغِيْ لِجَلاَلِ وَجْهِكَ الْكَرِيْمِ وَعَظِيْمِ سُلْطَانِكَ اللهم صل على سيدنا محمد وعلى ال سيدنا محمد.اَللَّهُمَّ رَبَّنَا تَـقَـبَّلْ مِنَّا صَلاَتَنَا وَصِيَا مَنَا وَرُكُوْ عَنَا وَسُجُوْدَنَا وَقُعُوْدَنَا وَتَضَرُّ عَنَا وَتَخَشُّوْ عَنَا وَتَعَبُّدَنَا وَتَمِّمْ تَقْصِيْرَ نَا يَا اَلله يَا رَبَّ الْعَا لَمِيْنَ. رَبَّنَا ضَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْ حَمْنَا لَنَكُوْ نَنَّ مِنَ الْخَا سِرِ يْ.  رَبَّنَا وَلاَ تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِ يْنَ مِنْ قَبْلِنَا .رَبَّنَا وَلاَ تُحَمِّلْنَا مَا لاَ طَا قَتَا لَنَا بِهِ, وَاعْفُ عَنَّا وَاغْفِرْلَنَا وَارْحَمْنَا أَنْتَ مَوْلاَ نَا فَا نْصُرْنَا عَلَى الْقَوْمِ الْكَا فِرِيْنَ رَبَّنَا لاَ تُزِغْ قُلُوْ بَنَا بَعْدَ إِذْ هَدَ يْتَنَا وَهَبْ لَنَا مِنْ لَّدُ نْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ .رَبَّنَا غْفِرْلَنَا وَلِوَالِدِيْنَ وَلِجَمِيْعِ الْمُسْلِمِيْنَ وَالْمُسْلِمَاتِ وَالْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ أَلْأَ حْيَآءِمِنْهُمْ وَاْلأَ مْوَاتِ, اِنَّكَ عَلَى قُلِّ ثَيْءٍقَدِيْرِ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي اْلآ خِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ سُبْحَانَ رَبِّكِ رَبِّ الْعِزَةِ عَمَّا يَصِفُوْنَ، وَسَلاَمٌ عَلَى الْمُرْ سَلِيْنَ، وَالْحَمْدُ لِلهِ رَبِّ الْعَالَمِيْنَ",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
                           fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
+                          textAlign: TextAlign.justify,
                     ),
                     SizedBox(
                       height: 10,
@@ -165,7 +166,7 @@ class _AyatKursiState extends State<AyatKursi> {
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10),
                       child: SelectableText(
-                        "Allaahu laa ilaaha illaa huwal hayyul qoyyuum, laa ta'khudzuhuu sinatuw walaa naum. Lahuu maa fissamaawaati wa maa fil ardli man dzal ladzii yasyfa’u ‘indahuu illaa biidznih, ya’lamu maa baina aidiihim wamaa kholfahum wa laa yuhiithuuna bisyai’im min ‘ilmihii illaa bimaa syaa’ wasi’a kursiyyuhus samaawaati wal ardlo walaa ya’uuduhuu hifdhuhumaa wahuwal ‘aliyyul ‘adhiim.",
+                        "Bismillahirrahmaanirrahiim. Alhamdu lillaahi rabbil 'aalamiin, hamdan yuwaafii ni'amahu wayukaafii maziidahu. Ya rabbanaa lakal hamdu kamaa yan baghhi lijalaali wajhika wa'azhiimi sulthaanika. Allahumma shalli 'alaa sayyidinaa muhammadin wa'alaa aali sayyidinaa muhammad. Allahumma rabbanaa taqabbal minnaa shalaataana washiyaamanaa warukuu'anaa wasujuudanaa waqu'uudanaa watadlarru'anaa, watakhasysyu'anaa wata'abbudanaa, watammim taqshiiranaa yaa allah yaa rabbal'aalamiin. Rabbana dzhalamnaa anfusanaa wa-inlamtaghfir lana watarhamnaa lanakuunanna mlnal khaasiriin. Rabbanaa walaa tahmil'alainaa ishran kama hamaltahul'alal ladziina min qablinaa. Rabbanaa walaa tuhammilnaa maalaa thaaqata lanaa bihii wa'fu'annaa waghfir lanaa warhamnaa anta maulaanaa fanshurnaa 'alal qaumil kaafiriin. Rabbanaa laa tuzigh quluubanaa ba'da idzhadaitanaa w'ahablanaa min ladunka rahmatan innaka antal wahhaab. Rabbanaghfir lanaa waliwaalidinaa walijami'il muslimiin walmuslimaati wal mu'miniina walmu'minati. Al ahyaa-i-minhum wal amwaati, innaka alaa kuli syai'n qadiir. Rabbanaa aatinaa fiddunyaa hasanatan wafil aakhirati hasanatan waqinaa adzaaban-naar. Subhaana rabbika rabbil i'zzati ammaa yashifuuna wasalaamun 'alal mursalhna wal-hamdu lillaahi rabbil'aalamiina.",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,
@@ -179,7 +180,7 @@ class _AyatKursiState extends State<AyatKursi> {
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10),
                       child: SelectableText(
-                        "Terjemahan : Allah, tidak ada tuhan selain Dia. Yang Mahahidup, Yang terus menerus mengurus (makhluk-Nya), tidak mengantuk dan tidak tidur. Milik-Nya apa yang ada di langit dan apa yang ada di bumi. Tidak ada yang dapat memberi syafaat di sisi-Nya tanpa izin-Nya. Dia mengetahui apa yang di hadapan mereka dan apa yang di belakang mereka, dan mereka tidak mengetahui sesuatu apa pun tentang ilmu-Nya melainkan apa yang Dia kehendaki. Kursi-Nya meliputi langit dan bumi. Dan Dia tidak merasa berat memelihara keduanya, dan Dia Mahatinggi, Mahabesar.",
+                        "Dengan menyebut nama Allah Yang Maha Pengasih dan Maha Penyayang. Segala puji bagi Allah Tuhan seru sekalian alam. Dengan puji yang sebanding dengan nikmat-Nya dan menjamin tambahannya. Ya Allah Tuhan Kami, bagi-Mu segala puji dan segala apa yang patut atas keluhuran DzatMu dan Keagungan kekuasaanMu. Ya Allah! Limpahkanlah rahmat dan salam atas junjungan kita Nabi Muhammad dan sanak keluarganya. Ya Allah terima sholat kami, puasa kami, ruku kami, sujud kami, duduk rebah kami, khusyu' kami, pengabdian kami, dan sempurnakanlah apa yang kami lakukan selama sholat ya Allah. Tuhan seru sekalian alam. Ya Allah, Kami telah aniaya terhadap diri kami sendiri, karena itu ya Allah jika tidak dengan limpahan ampunan-Mu dan rahmat-Mu niscaya kami akan jadi orang yang sesat. Ya Allah Tuhan kami, janganlah Engkau pikulkan atas diri kami beban yang berat sebagaimana yang pernah Engkau bebankan kepada orang yang terdahulu dari kami. Ya Allah Tuhan kami, janganlah Engkau bebankan atas diri kami apa yang di luar kesanggupan kami. Ampunilah dan limpahkanlah rahmat ampunan terhadap diri kami ya Allah. Ya Allah Tuhan kami, berilah kami pertolongan untuk melawan orang yang tidak suka kepada agamaMu. Ya Allah Tuhan kami, janganlah engkau sesatkan hati kami sesudah mendapat petunjuk, berilah kami karunia. Engkaulah yang maha Pemurah.",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 14,
