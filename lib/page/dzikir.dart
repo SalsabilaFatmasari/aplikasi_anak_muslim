@@ -246,7 +246,7 @@ class _DzikirState extends State<Dzikir> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
                         textAlign: TextAlign.right
-                        main
+                        
                         ,
                       ),
                       )
