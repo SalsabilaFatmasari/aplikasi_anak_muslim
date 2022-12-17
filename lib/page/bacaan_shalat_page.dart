@@ -170,6 +170,9 @@ class _BacaanSholatState extends State<BacaanSholat> {
                                                       style: TextStyle(
                                                         fontSize: 12,
                                                       )),
+                                                ),
+                                                Icon(
+                                                  Icons.play_arrow,
                                                 )
                                               ],
                                             ),

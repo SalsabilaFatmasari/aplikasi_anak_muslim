@@ -55,48 +55,46 @@
       "latin": "Usholli sunnata ba'diyyatal 'isya'i rok'ataini mustaqbilal qiblati lillaahi ta'ala",
       "terjemahan": "Aku niat melakukan shalat sunat sesudah isya' 2 rakaat, sambil menghadap qiblat karena Allah ta'ala"
     },
-    [
-      {
-        "id": 9,
-        "name": "Doa Setelah Shalat Sunnah Tahajud",
-        "arabic": "اُصَلِّى سُنَّةً التَّهَجُّدِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ ِللهِ تَعَالَى",
-        "latin": "Ushallii sunnata-t-tahajjudi rak'ataini mustaqbilal qiblati lillahi ta'alla",
-        "terjemahan": "Aku niat sholat sunnah tahajud 2 rakaat, menghadap kiblat, karena Allah Ta'ala"
-      },
-      {
-        "id": 10,
-        "name": "Doa Setelah Shalat Sunnah Dhuha",
-        "arabic": "اُصَلِّى سُنَّةَ الضَّحٰى رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ اَدَاءً ِللهِ تَعَالَى",
-        "latin": "Ushalli Sunnatadh-dhuhaa rak'ataini lillaahi ta'aalaa",
-        "terjemahan": "Aku niat sholat sunat dhuha karena Allah ta'ala"
-      },
-      {
-        "id": 11,
-        "name": "Doa Setelah Shalat Sunnah Istikharah",
-        "arabic": "أُصَلِّيْ سُنَّةَ الْاِسْتِخَارَةِ رَكْعَتَيْنِ لِلّٰهِ تَعَالَى",
-        "latin": "Ushollii sunnatan istikharati rok'ataini lillahi ta'alaa",
-        "terjemahan": "Aku berniat sholat istikharah dua rakaat karena Allah ta'ala"
-      },
-      {
-        "id": 12,
-        "name": "Doa Setelah Shalat Sunnah Witir",
-        "arabic": "اُصَلِّى سُنَّةَ الْوِتْرِ ثَلَاثَ رَكْعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلهِ تَعَالَى",
-        "latin": "Ushalli sunnatal witri tsalatsa raka'atin mustaqbilal qiblati ada'an lillahi ta'ala",
-        "terjemahan": "Aku menyengaja salat sunah salat witir tiga rakaat dengan menghadap kiblat karena Allah Ta'ala"
-      },
-      {
-        "id": 13,
-        "name": "Doa Setelah Shalat Sunnah Hajat",
-        "arabic": "اُصَلِّى سُنَّةَ الْحَاجَةِ رَكْعَتَيْنِ لِلهِ تَعَالَى",
-        "latin": "Ushollii sunnatal haajati rok'aataini lillahi ta'ala",
-        "terjemahan": "Aku berniat sholat hajat sunnah hajat dua raka'at karena Allah Ta'ala"
-      },
-      {
-        "id": 14,
-        "name": "Doa Setelah Shalat Sunnah Taubat",
-        "arabic":"أُصَلِّيْ سُنَّةَ التَّوْبَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
-        "latin": "Ushollii sunnatat taubati rok’ataini lillaahi ta’aalaa",
-        "terjemahan": "Aku berniat melakukan sholat sunnah taubat dua rakaat karena Allah Ta’ala"
-      }
-    ]
-  ]
+    {
+      "id": 9,
+      "name": "Doa Setelah Shalat Sunnah Tahajud",
+      "arabic": "اُصَلِّى سُنَّةً التَّهَجُّدِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ ِللهِ تَعَالَى",
+      "latin": "Ushallii sunnata-t-tahajjudi rak'ataini mustaqbilal qiblati lillahi ta'alla",
+      "terjemahan": "Aku niat sholat sunnah tahajud 2 rakaat, menghadap kiblat, karena Allah Ta'ala"
+    },
+    {
+      "id": 10,
+      "name": "Doa Setelah Shalat Sunnah Dhuha",
+      "arabic": "اُصَلِّى سُنَّةَ الضَّحٰى رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ اَدَاءً ِللهِ تَعَالَى",
+      "latin": "Ushalli Sunnatadh-dhuhaa rak'ataini lillaahi ta'aalaa",
+      "terjemahan": "Aku niat sholat sunat dhuha karena Allah ta'ala"
+    },
+    {
+      "id": 11,
+      "name": "Doa Setelah Shalat Sunnah Istikharah",
+      "arabic": "أُصَلِّيْ سُنَّةَ الْاِسْتِخَارَةِ رَكْعَتَيْنِ لِلّٰهِ تَعَالَى",
+      "latin": "Ushollii sunnatan istikharati rok'ataini lillahi ta'alaa",
+      "terjemahan": "Aku berniat sholat istikharah dua rakaat karena Allah ta'ala"
+    },
+    {
+      "id": 12,
+      "name": "Doa Setelah Shalat Sunnah Witir",
+      "arabic": "اُصَلِّى سُنَّةَ الْوِتْرِ ثَلَاثَ رَكْعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لِلهِ تَعَالَى",
+      "latin": "Ushalli sunnatal witri tsalatsa raka'atin mustaqbilal qiblati ada'an lillahi ta'ala",
+      "terjemahan": "Aku menyengaja salat sunah salat witir tiga rakaat dengan menghadap kiblat karena Allah Ta'ala"
+    },
+    {
+      "id": 13,
+      "name": "Doa Setelah Shalat Sunnah Hajat",
+      "arabic": "اُصَلِّى سُنَّةَ الْحَاجَةِ رَكْعَتَيْنِ لِلهِ تَعَالَى",
+      "latin": "Ushollii sunnatal haajati rok'aataini lillahi ta'ala",
+      "terjemahan": "Aku berniat sholat hajat sunnah hajat dua raka'at karena Allah Ta'ala"
+    },
+    {
+      "id": 14,
+      "name": "Doa Setelah Shalat Sunnah Taubat",
+      "arabic": "أُصَلِّيْ سُنَّةَ التَّوْبَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى",
+      "latin": "Ushollii sunnatat taubati rok’ataini lillaahi ta’aalaa",
+      "terjemahan": "Aku berniat melakukan sholat sunnah taubat dua rakaat karena Allah Ta’ala"
+    }
+]

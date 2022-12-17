@@ -21,27 +21,29 @@ class _NiatSholatSunnahState extends State<NiatSholatSunnah> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xff0e1446),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Stack(
               children: [
+               
                 Align(
                   alignment: Alignment.topLeft,
                   child: IconButton(
                     onPressed: () => Navigator.of(context).pop(),
-                    icon: Icon(Icons.arrow_back, color: Colors.black),
+                    icon: Icon(Icons.arrow_back, color: Colors.white),
                   ),
                 ),
+
                 Align(
                   alignment: Alignment.topLeft,
                   child: Container(
                     margin: EdgeInsets.only(top: 80),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Color(0xff0e1446)),
+                        color: Color(0xff44aca0)),
                     height: 200,
                     width: MediaQuery.of(context).size.width,
                     child: Container(
@@ -58,7 +60,7 @@ class _NiatSholatSunnahState extends State<NiatSholatSunnah> {
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Bacaan niat sholat wajib 5 waktu",
+                              "Bacaan niat shalat sunnah rawatib dan lainnya",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -77,8 +79,8 @@ class _NiatSholatSunnahState extends State<NiatSholatSunnah> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/bg_shalat.png",
-                      width: 330,
+                      "assets/images/ic_shalat.jpg",
+                      width: 300,
                     ),
                   ),
                 ),
@@ -168,6 +170,9 @@ class _NiatSholatSunnahState extends State<NiatSholatSunnah> {
                                                       style: TextStyle(
                                                         fontSize: 12,
                                                       )),
+                                                ),
+                                                Icon(
+                                                  Icons.play_arrow,
                                                 )
                                               ],
                                             ),

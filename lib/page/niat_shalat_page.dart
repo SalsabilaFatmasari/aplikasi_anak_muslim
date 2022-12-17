@@ -83,7 +83,7 @@ class _NiatSholatState extends State<NiatSholat> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/ic_shalat_wajib.png", //ganti gambar
+                      "assets/images/ic_shalat_wajib.jpg", //ganti gambar
                       width: 330,
                       height: 200,
                       fit: BoxFit.fitWidth,

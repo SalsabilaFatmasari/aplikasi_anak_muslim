@@ -2,7 +2,7 @@ import 'package:apk_ank/page/bacaan_wudhu.dart';
 import 'package:apk_ank/page/dzikir.dart';
 import 'package:apk_ank/page/niat_shalat__sunnah_page.dart';
 import 'package:flutter/material.dart';
-import 'package:apk_ank/page/ayat_kursi_page.dart';
+import 'package:apk_ank/page/surah_page.dart';
 import 'package:apk_ank/page/bacaan_shalat_page.dart';
 import 'package:apk_ank/page/niat_shalat_page.dart';
 import 'package:apk_ank/page/niat_shalat__sunnah_page.dart';

@@ -184,7 +184,9 @@ class _BacaanWudhuState extends State<BacaanWudhu> {
                                                         fontSize: 12,
                                                       )),
                                                 ),
-                                                
+                                                Icon(
+                                                  Icons.play_arrow,
+                                                )
                                               ],
                                             ),
                                           )

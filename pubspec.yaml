@@ -66,7 +66,6 @@ flutter:
     - assets/images/ic_bacaan.png
     - assets/images/ic_doa.png
     - assets/images/ic_niat.png
-    - assets/images/ic_shalat_wajib.png
     - assets/images/bg_wajib.png
     - assets/images/bg_doa.png
     - assets/images/bg_quran.png
@@ -79,6 +78,9 @@ flutter:
     - assets/images/bg_qunut.png
     - assets/images/doa.png
     - assets/images/ic_wudhu.jpg
+    - assets/images/ic_shalat.jpg
+    - assets/images/ic_shalat_wajib.jpg
+    - assets/images/is_shalat.jpg
 
     - assets/data/bacaanshalat.json
     - assets/data/niatshalat.json
