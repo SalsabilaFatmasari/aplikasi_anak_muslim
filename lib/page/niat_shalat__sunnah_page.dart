@@ -51,7 +51,7 @@ class _NiatSholatSunnahState extends State<NiatSholatSunnah> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Niat Sholat Wajib",
+                              "Niat Sholat Sunnah",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,

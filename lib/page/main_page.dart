@@ -25,29 +25,29 @@ class _MainPageState extends State<MainPage>{
         backgroundColor: Color(0xff0e1446),
         title: const Text("Belajar Shalat"),
       ),
-      drawer: Drawer(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              const MyHeaderDrawer(),
-              ListTile(
-                leading: const Icon(Icons.home),
-                title: const Text("Beranda"),
-                onTap: () {Navigator.pop(context,
-                          MaterialPageRoute(
-                              builder: (context) => MainPage()));},
-              ),
-              ListTile(
-                leading: const Icon(Icons.message),
-                title: const Text("Konsultasi"),
-                onTap: () {Navigator.pop(context,
-                          MaterialPageRoute(
-                              builder: (context) => MainPage()));},
-              ),
-            ],
-          ),
-          ),
-        ),
+      // drawer: Drawer(
+      //   child: SingleChildScrollView(
+      //     child: Column(
+      //       children: [
+      //         const MyHeaderDrawer(),
+      //         ListTile(
+      //           leading: const Icon(Icons.home),
+      //           title: const Text("Beranda"),
+      //           onTap: () {Navigator.pop(context,
+      //                     MaterialPageRoute(
+      //                         builder: (context) => MainPage()));},
+      //         ),
+      //         ListTile(
+      //           leading: const Icon(Icons.message),
+      //           title: const Text("Konsultasi"),
+      //           onTap: () {Navigator.pop(context,
+      //                     MaterialPageRoute(
+      //                         builder: (context) => MainPage()));},
+      //         ),
+      //       ],
+      //     ),
+      //     ),
+      //   ),
       body: GridView.count(
         padding: const EdgeInsets.all(25),
         crossAxisCount: 2,
